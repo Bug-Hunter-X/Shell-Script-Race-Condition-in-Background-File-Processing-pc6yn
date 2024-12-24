@@ -1,0 +1,3 @@
+# Shell Script Race Condition
+
+This repository demonstrates a race condition in a shell script that processes files concurrently using background processes. The script uses a simple `for` loop to iterate over a list of files and processes each file in the background.  The problem occurs because the script does not ensure proper synchronization, and the processing of subsequent files might begin before previous operations have completed, leading to unexpected results or errors.  The solution demonstrates the correct way to handle file processing by implementing appropriate synchronization mechanism.
